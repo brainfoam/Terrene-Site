@@ -1,35 +1,62 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Playfair Display', serif;
+}
+
+body {
+    opacity: 1;
+    transition: 2.0s opacity;
+}
+  
+body.fade {
+    opacity: 0;
+    transition: none;
 }
 
 #site-body {
-    text-align: center;
     margin: 20px auto;
     max-width: 1000px;
-    background-color: #fffff4;
-    border: 2px solid black;
 }
 
 #site-header {
-    min-height: 70px;
     text-align: left;
-    padding: 10px;
-    background-color: #f9f1f1;
 }
 
-#site_name {
-    font-size: 40px;
-    margin-top: 5px;
-    margin-left: 10px;
+#site-nav {
+
 }
 
 #site-hero {
-    min-height: 500px;
+    min-height: 650px;
+    background-image: url(../images/hero_bg.jpg);
+    background-position-y: -50px;
+    background-repeat: no-repeat;
+    color: white;
 }
 
-#site_footer {
+#site-hero-text {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 70px;
+    text-shadow: -2px 2px 6px rgba(0,0,0,.2);
+}
+
+#site-hero-description {
+    text-align: center;
+    color: black;
+    height: 100%;
+    border-radius: 20px;
+    margin: 100px;
+    padding: 10px;
+    margin-top: 0px;
+    background-color: white;
+}
+
+.site-section {
+    min-height: 400px;
+}
+
+#site-footer {
     min-height: 40px;
     background-color: #f9f1f1;
 }
